@@ -71,7 +71,7 @@ export function ClipButton({ ev }: { ev: TaggedNostrEvent }) {
         .tag(["p", host ?? ev.pubkey])
         .tag(["r", newClip.url])
         .tag(["title", title])
-        .tag(["alt", `Live stream clip created on https://zap.stream\n${newClip.url}`]);
+        .tag(["alt", `Live stream clip created on https://zap.luvnft.com\n${newClip.url}`]);
     });
     console.debug(ee);
     await system.BroadcastEvent(ee);
